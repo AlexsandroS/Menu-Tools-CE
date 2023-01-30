@@ -1,0 +1,202 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --mcolor: #04f390;
+  --bccolor: #020705;
+}
+
+body{
+  display: flex;
+  justify-content: center;
+  background: #141414;
+  font-family: 'Nunito', sans-serif;
+  color:#e7e7e7;
+  height: 0;
+}
+
+.container{
+  position: relative;
+  width: 300px;
+}
+
+.banner{
+  height: 50px;
+  background: var(--bccolor);
+  color: var(--mcolor);
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 0.8rem;
+  letter-spacing: 5px;
+  border-bottom: 2px solid var(--mcolor);
+}
+
+.container .list{
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 50px;
+  margin: 5px 0 5px 0;
+  background: var(--bccolor);
+}
+
+.item-descri{
+  position: relative;
+  margin-left: 10px;
+  color: white;
+  font-size: 17px;
+  font-weight: 300;
+  font-family: "Lucida Console", Courier, monospace;
+  cursor: help;
+}
+
+
+.ccheck{
+  background: #171c21;
+  position: absolute;
+  width: 60px;
+  height: 30px;
+  right: 0;
+  margin-right: 5px;
+  border-radius: 50px;
+}
+
+.ccheck .indicator{ /*Indicador do check, criação e cor de desativo*/
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #646464;
+  width: 30px;
+  height: 30px;
+  border-radius: 50px;
+  box-shadow: inset 0 0 15px #222222;
+  transition: 0.5s;
+}
+
+.container .ccheck input{ /* Checkbox sempre por cima*/
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.ccheck input:checked ~ .indicator{ /*Indicador do check ativado*/
+  left: 30px;
+  background: #06703c;
+  box-shadow: inset 0 0 15px var(--mcolor);
+}
+
+.gro-center{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cspan{
+  width: 100px;
+}
+
+.btgirar{
+font-size: 2em;
+background-color: rgba(0, 0, 0, 0.5);
+width: 35px;
+height: 35px;
+border-radius: 50px;
+cursor: pointer;
+user-select: none;
+transition: 0.4s;
+box-shadow: 0 0 8px 2px var(--mcolor);
+color: var(--mcolor)
+}
+
+.img-center{
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.btgirar:active{
+  background-color: rgb(220, 216, 231);
+}
+
+.tol{
+  position: absolute;
+  left: 20px;
+}
+.tol:hover{
+  transform: rotate(-100deg);
+}
+
+.tor{
+  position: absolute;
+  right: 20px;
+  transform: scaleX(-1);
+}
+
+.tor:hover{
+  transform: scaleX(-1) rotate(-100deg);
+}
+
+
+.aloc-img{
+  height: 70%;
+  width: 70%;
+  filter: invert(70%) sepia(67%) saturate(2595%) hue-rotate(105deg) brightness(107%) contrast(97%);
+}
+
+.txtgirar{
+  width: 100%;
+  text-align: center;
+  font-size: 22px;
+}
+
+.colorbox{
+  height: 40px;
+  width: 40px;
+  margin-left: 5px;
+  border: none;
+  background-color: rgb(0, 0, 0);
+  cursor: pointer;
+  padding: 0;
+  outline: 0;
+  
+  
+}
+
+.list-descr{
+  width: 95%;
+  background-color: #030a07;
+  margin: 0 auto;
+  padding: 10px;
+  text-align:left;
+  font-size: 14px;
+}
+
+.item{
+  width: 80%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+
+
+._active-descri{
+  border-bottom: 2px solid var(--mcolor);
+}
+
+._active-item{
+  border-top: 2px solid var(--mcolor);
+  margin: 0;
+}
+
+

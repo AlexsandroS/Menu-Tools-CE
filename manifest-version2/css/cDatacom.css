@@ -1,0 +1,83 @@
+:root{
+
+    --cbackmain: #191919;
+    --cbacksec: #272727;
+    --ccolorsec: #009286;
+    --ccolormain: #00F27D;
+    --ccolordark: #004530;
+    --ctextmain: #FFFFFF;
+    --ctextsec: #D1D1D1;
+}
+
+#page-wrapper #page{
+    background: var(--cbackmain) !important;
+}
+
+.card{
+    background: var(--cbacksec) !important;
+    color: var(--ctextmain);
+} 
+
+.card a{
+    color: var(--ctextmain);
+}
+
+.card-title{
+    color: var(--ccolormain)
+}
+
+.page-header-headings{
+    color: var(--ccolormain) !important;
+
+}
+
+.card-footer.dashboard-card-footer.border-0.bg-white{
+    background: var(--cbacksec) !important;
+}
+
+nav.fixed-top.navbar.navbar-light.bg-white.navbar-expand.moodle-has-zindex{
+    background: var(--cbacksec) !important;
+    color: var(--ccolordark) !important;
+}
+
+button.btn.nav-link.float-sm-left.mr-1.btn-light.bg-gray{
+    background: var(--cbacksec);
+}
+
+#region-main{
+    background: var(--cbacksec) !important;
+    color: var(--ctextsec);
+}
+
+.section li.activity.hasinfo{
+    border-bottom: 1px solid var(--cbackmain) !important;
+}
+
+.sectionname span{
+    color: var(--ccolorsec) !important;
+}
+
+.sectionname a{
+    color: var(--ccolorsec) !important;
+}
+
+.course-content ul li.section.main{
+    border-bottom: 1px solid var(--ccolordark) !important;
+}
+
+.instancename{
+    color: var(--ctextsec);
+}
+
+a.autolink
+{
+    color: var(--ctextmain);
+}
+.alert-danger{
+    color: #e7e7e7;
+    background: #004530;
+}
+
+.navbar-light .navbar-nav .nav-link{
+    color: var(--ccolormain) !important;
+}

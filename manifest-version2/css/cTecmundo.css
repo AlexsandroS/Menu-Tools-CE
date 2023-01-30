@@ -1,0 +1,17 @@
+:root{
+    --sub-backcolor: rgb(26, 26, 26);
+    --main-backcolor: rgb(12, 12, 12);
+    --font-color: #fff;
+    --navbar-border-color: #00ff0d !important;
+    --background-color: #0c0c0c !important;
+}
+
+
+.tec--carousel__item--template1 .tec--carousel__item__title, .tec--carousel__item--template2 .tec--carousel__item__title{
+    color: white !important;
+}
+
+.tec--header{
+    background: var(--sub-backcolor);
+}
+
